@@ -16,11 +16,12 @@ export default function HeroSection() {
             VIEW COLLECTIONS
           </button>
           <Image
-            className="absolute top-0 left-0 w-full h-full object-contain object-bottom-right"
+            className="absolute top-0 left-0 object-contain object-bottom-right"
             src={"/images/5e143183ca0df25c3d226a223269e70541e09760.png"}
             alt="image"
-            width={1100}
-            height={1100}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            style={{ objectPosition: "right bottom" }}
           />
         </div>
         <div className="flex flex-row gap-4 overflow-auto px-4">
@@ -42,7 +43,7 @@ export default function HeroSection() {
           Our favorite combinations for casual outfit that can inspire you to
           apply on your daily activity.
         </p>
-        <button className="py-4 w-full rounded-full border-[1px] text-md font-medium leading-normal tracking-wide">
+        <button className="hover:bg-green-200 transition-all duration-200 py-4 w-full rounded-full border-[1px] text-md font-medium leading-normal tracking-wide">
           BROWSE INPIRATIONS
         </button>
       </div>
