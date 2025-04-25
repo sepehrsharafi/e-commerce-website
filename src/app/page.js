@@ -4,7 +4,7 @@ import BrowseByColor from "./ui/browse-by-color";
 
 export default function Home() {
   return (
-    <main>
+    <main className="max-w-[1320px] mx-auto">
       <HeroSection />
       <BrowseByColor />
     </main>
